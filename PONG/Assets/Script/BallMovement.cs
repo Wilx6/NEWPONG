@@ -10,8 +10,8 @@ public class BallMovement : MonoBehaviour
     public float ySpeed = 0; //variable for vertical speed
 
     //variable for borders
-    private float xBorder = 7.5f; //variable for horizontal border
-    private float yBorder = 4.5f; //variable for vertical border
+    private float xBorder = 7.7f; //variable for horizontal border
+    private float yBorder = 4.7f; //variable for vertical border
 
     //variable for move state
     public bool xMove = true;
@@ -26,8 +26,8 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xSpeed = 0.0125f;   //declare value for horizontal speed
-        ySpeed = 0.0125f;   //declare value for vertical speed
+        xSpeed = 0.02f;   //declare value for horizontal speed
+        ySpeed = 0.02f;   //declare value for vertical speed
     }
 
     // Update is called once per frame
@@ -47,13 +47,13 @@ public class BallMovement : MonoBehaviour
         if (transform.position.x >= xBorder)
         {
             xMove = false; //make it go left
-            playerOneScore = playerOneScore + 1;
+            playerTwoScore = playerTwoScore + 1;
         }
 
         if (transform.position.x <= -xBorder)
         {
             xMove = true;
-            playerTwoScore = playerTwoScore + 1;
+            playerOneScore = playerOneScore + 1;
         }
 
         //vertical movement
