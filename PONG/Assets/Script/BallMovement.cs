@@ -26,8 +26,8 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xSpeed = 0.02f;   //declare value for horizontal speed
-        ySpeed = 0.02f;   //declare value for vertical speed
+        xSpeed = 0.0100f;   //declare value for horizontal speed
+        ySpeed = 0.0100f;   //declare value for vertical speed
     }
 
     // Update is called once per frame
